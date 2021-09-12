@@ -3,9 +3,11 @@ import java.util.*;
 
 public class Nhap {
     public static void main(String[] args) {
-        int arr[] = {10,20,30,40,50}; 
-        // int index = arr.binarySearch(arr, 60);       
-        System.out.println(Arrays.binarySearch(arr, 50));
+        int tmp=5;
+        char s=(char)(tmp + '0');
+        String s1="am";
+        s1=s+s1;
+        System.out.println(s1);
     }
 
     // private static void extracted(int num) {
