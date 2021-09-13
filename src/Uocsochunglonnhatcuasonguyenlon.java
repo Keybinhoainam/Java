@@ -23,7 +23,7 @@ public class Uocsochunglonnhatcuasonguyenlon {
         for(int i=0;i<test;i++)
         {
             long a=sc.nextLong();
-            String tmp= sc.nextLine();
+            sc.nextLine();
             String b=sc.nextLine();
             long b1=mod(b,a);
             long uoc=ucln(a,b1);
