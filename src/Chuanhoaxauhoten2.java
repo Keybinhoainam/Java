@@ -8,67 +8,19 @@ public class Chuanhoaxauhoten2 {
         for(int t=0;t<test;t++)
         {
             String s=sc.nextLine();
-            s=s.toLowerCase();
-            char a[]=s.toCharArray();
-            int i=0;
-            for(;i<a.length;i++)
+            s=s.toLowerCase().trim();
+            String kq[]=s.split("\\s+");
+            for(int i=1;i<kq.length;i++)
             {
-                if(a[i]!=' ')
-                {
-                    break;
-                }
-            }
-            int bd=i;
-            for(;i<a.length;i++)
-            {
-                if(a[i]==' ')
-                {
-                    break;
-                }
-            }
-            int end=i-1;
-            for(;i<a.length;i++)
-            {
-                if(a[i]!=' ')
-                {
-                    break;
-                }
-            }
-            int k=i;
-            int upper=1;
-            for(;i<a.length;i++)
-            {
-                if(upper==1&&Character.isLetter(a[i]))
-                {
-                    a[i]=Character.toUpperCase(a[i]);
-                    upper=0;
-                }
-                if(!Character.isLetter(a[i]))
-                {
-                    upper=1;
-                }
-            }
-            i=k;
-            for(;i<a.length;i++)
-            {
-                if(i<a.length-1&&a[i]==' '&&a[i+1]==' ')
-                {
-                    continue;
-                }
-                System.out.print(a[i]);
+                if(i<kq.length-1)System.out.print(Character.toUpperCase(kq[i].charAt(0))+kq[i].substring(1)+" ");
+                else System.out.print(Character.toUpperCase(kq[i].charAt(0))+kq[i].substring(1));
             }
             System.out.print(", ");
-            i=bd;
-            for(;i<=end;i++){
-                System.out.print(Character.toUpperCase(a[i]));
+            for(int i=0;i<kq[0].length();i++)
+            {
+                System.out.print(Character.toUpperCase(kq[0].charAt(i)));
             }
             System.out.println();
-            
-
-            
-
-            
         }
-        // sc.close();
     }
 }

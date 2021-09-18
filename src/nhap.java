@@ -2,12 +2,11 @@
 import java.util.*;
 
 public class Nhap {
+    
     public static void main(String[] args) {
-        int tmp=5;
-        char s=(char)(tmp + '0');
-        String s1="am";
-        s1=s+s1;
-        System.out.println(s1);
+        
+        System.out.println("OK");
+
     }
 
     // private static void extracted(int num) {
